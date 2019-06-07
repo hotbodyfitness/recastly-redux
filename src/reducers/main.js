@@ -4,6 +4,10 @@ import videoList from './videoList.js';
 
 var rootReducer = combineReducers({currentVideo, videoList});
 
+// var rootReducer = () => { // what's the difference between this and the above code?
+//   return combineReducers({currentVideo, videoList});
+// };
+
 //TODO: define the root reducer for this app
 
 //HINT: you'll need to combine the other two reducers in this
