@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import Search from './../components/Search.js';
+import Search from '../components/Search.js';
 import handleSearchChange from '../actions/search.js';
 
 // var mapStateToProps = (state) => (
@@ -7,7 +7,7 @@ import handleSearchChange from '../actions/search.js';
 // );
 
 var mapDispatchToProps = (dispatch) => (
-  {handleSearchInputChange: q => dispatch(handleSearchChange(q))}
+  {handleSearchInputChange: q => dispatch(handleSearchChange(q.target.value))}
 );
 
 var SearchContainer = connect(
